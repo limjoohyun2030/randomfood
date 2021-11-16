@@ -82,14 +82,12 @@ function App({ authService }) {
         <Switch>
           <Route
             exact
-            // path="/randomfood/"
-            path="/"
+            path="/randomfood/"
             render={() => <Login authService={authService} />}
           />
 
           <Route
-            // path="/randomfood/home"
-            path="/home"
+            path="/randomfood/home"
             render={() => (
               <div>
                 <Logout
