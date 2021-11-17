@@ -1,10 +1,32 @@
 import { useEffect, useState, useRef } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useHistory } from "react-router-dom";
 import styles from "./app.module.css";
 import FoodDetail from "./components/food_detail/food_detail";
 import FoodList from "./components/food_list/food_list";
+import Header from "./components/header/header";
 import Login from "./components/login/login";
 import Logout from "./components/logout/logout";
+
+// function Content({ authService }) {
+//   const history = useHistory();
+//   const onLogout = () => {
+//     authService.logout();
+//   };
+
+//   useEffect(() => {
+//     authService.onAuthChange((user) => {
+//       if (!user) {
+//         history.push("/random-food/");
+//       }
+//     });
+//   });
+
+//   return (
+//     <div>
+//       <button onClick={onLogout}>Click me</button>
+//     </div>
+//   );
+// }
 
 function App({ authService }) {
   const ref = useRef();
@@ -65,7 +87,7 @@ function App({ authService }) {
           />
 
           <Route
-            path="/home"
+            path="/randomfood/home"
             render={() => (
               <div>
                 <Logout

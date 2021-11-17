@@ -6,6 +6,27 @@ import FoodList from "./components/food_list/food_list";
 import Login from "./components/login/login";
 import Logout from "./components/logout/logout";
 
+// function Content({ authService }) {
+//   const history = useHistory();
+//   const onLogout = () => {
+//     authService.logout();
+//   };
+
+//   useEffect(() => {
+//     authService.onAuthChange((user) => {
+//       if (!user) {
+//         history.push("/random-food/");
+//       }
+//     });
+//   });
+
+//   return (
+//     <div>
+//       <button onClick={onLogout}>Click me</button>
+//     </div>
+//   );
+// }
+
 function App({ authService }) {
   const ref = useRef();
   const [foods, setFoods] = useState([]);

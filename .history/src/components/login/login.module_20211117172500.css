@@ -3,14 +3,18 @@
 .login {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%; */
+  /* height: auto; */
   width: 20em;
   text-align: center;
+  /* display: flex; */
   flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: #fac241;
   border: 1px solid #dba72d;
-  padding: 4em 4em;
+  /* margin: auto 0; */
+  padding: 2em 2em;
 }
 
 .list {

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styles from "./logout.module.css";
 import { useHistory } from "react-router";
 import Header from "../header/header";
 

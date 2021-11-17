@@ -1,16 +1,17 @@
 /* @value makerGreen, makerLightPink, makerWhite from '../../common/colors.css'; */
 
 .login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: auto;
   width: 20em;
   text-align: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fac241;
-  border: 1px solid #dba72d;
-  padding: 4em 4em;
+  border: 1px solid #fac241;
+  margin: auto 1em;
+  padding: 2em 2em;
 }
 
 .list {
@@ -32,10 +33,10 @@
   border-radius: 1.2rem;
   background-color: white;
   cursor: pointer;
-  border: 0.1rem solid green;
+  border: 0.2rem solid green;
   outline: 0;
 }
 
 .button:hover {
-  background-color: rgb(233, 233, 233);
+  background-color: pink;
 }
