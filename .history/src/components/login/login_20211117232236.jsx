@@ -7,7 +7,7 @@ const Login = ({ authService }) => {
   const history = useHistory();
   const goToHome = (userId) => {
     history.push({
-      pathname: "/random-food/home",
+      pathname: "random-food/home",
       state: { id: userId },
     });
   };
