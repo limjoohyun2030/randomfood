@@ -65,7 +65,7 @@ function App({ authService }) {
           />
 
           <Route
-            path="/home"
+            path="/random-food/home"
             render={() => (
               <div>
                 <Logout

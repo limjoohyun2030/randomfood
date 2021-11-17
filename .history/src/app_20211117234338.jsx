@@ -60,7 +60,7 @@ function App({ authService }) {
         <Switch>
           <Route
             exact
-            path="/"
+            path="/login"
             render={() => <Login authService={authService} />}
           />
 
