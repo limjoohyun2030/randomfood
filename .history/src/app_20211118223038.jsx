@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { HashRouter, BrowserRouter, Route, Switch } from "react-router-dom";
+import {HashRouter, BrowserRouter, Route, Switch } from "react-router-dom";
 import styles from "./app.module.css";
 import FoodDetail from "./components/food_detail/food_detail";
 import FoodList from "./components/food_list/food_list";
@@ -97,38 +97,7 @@ function App({ authService }) {
           </Route>
         </Switch>
       </BrowserRouter> */}
-      <HashRouter>
-        <Route
-          exact
-          path="/random-food"
-          render={() => <Login authService={authService} />}
-        />
-
-        <Route
-          path="/random-food/home"
-          render={() => (
-            <div>
-              <Logout
-                onRefreshClick={onRefreshClick}
-                authService={authService}
-              />
-              <section>
-                <div>{isFoodOpen && <FoodDetail food={isSelectedFood} />}</div>
-
-                <div
-                  className={styles.list}
-                  onClick={() => setIsFoodOpen((oldstate) => !oldstate)}
-                >
-                  <FoodList foods={foods} onFoodClick={selectFood} ref={ref} />
-                </div>
-              </section>
-            </div>
-          )}
-        />
-        <Route path="*">
-          <h2>Page Not Found</h2>
-        </Route>
-      </HashRouter>
+      <
     </div>
   );
 }
