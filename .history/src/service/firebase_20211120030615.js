@@ -17,17 +17,6 @@ import { initializeApp } from "firebase/app";
 //   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 // };
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDV6slT6gC3_LAiY8BfntgtyOB1wzkRESU",
-  authDomain: "random-food-78556.firebaseapp.com",
-  databaseURL: "https://random-food-78556-default-rtdb.firebaseio.com",
-  projectId: "random-food-78556",
-  storageBucket: "random-food-78556.appspot.com",
-  messagingSenderId: "656523554283",
-  appId: "1:656523554283:web:3ea66f5582c2e2bb553dae",
-  measurementId: "G-4L61SWW3SK",
-};
-
 // console.log(process.env.REACT_APP_FIREBASE_API_KEY);
 // Initialize Firebase
 // const firebaseApp = firebase.initializeApp(firebaseConfig);
