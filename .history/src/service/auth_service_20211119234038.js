@@ -1,4 +1,4 @@
-import firebase from "firebase/app";
+import firebase from "firebase";
 import firebaseApp from "./firebase";
 import "firebase/auth"; // This line is important
 
