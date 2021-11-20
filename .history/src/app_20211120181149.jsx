@@ -125,9 +125,9 @@ function App({ authService }) {
             </div>
           )}
         />
-        {/* <Route path="*">
+        <Route path="*">
           <h2>Page Not Found</h2>
-        </Route> */}
+        </Route>
       </HashRouter>
     </div>
   );
